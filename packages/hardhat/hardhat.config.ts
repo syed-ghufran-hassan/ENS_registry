@@ -30,7 +30,8 @@ const config: HardhatUserConfig = {
       },
     },
   },
-  defaultNetwork: "localhost",
+  defaultNetwork: "sepolia",
+
   namedAccounts: {
     deployer: {
       // By default, it will take the first Hardhat account as the deployer
@@ -119,6 +120,7 @@ const config: HardhatUserConfig = {
       accounts: [deployerPrivateKey],
     },
   },
+
   // configuration for harhdat-verify plugin
   etherscan: {
     apiKey: `${etherscanApiKey}`,
